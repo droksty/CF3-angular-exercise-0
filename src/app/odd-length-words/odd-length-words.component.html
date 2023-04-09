@@ -1,0 +1,19 @@
+<div class="border border-2 border-primary">
+  <table>
+    <thead>
+      <tr>
+        <th class="p-2">Λέξεις με μονό μήκος</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="oddWords.length==0">
+        <td class="p-2">Δεν υπάρχουν</td>
+      </tr>
+      <tr class="p-2" *ngFor="let word of oddWords">
+        <!-- <td class="p-2">{{oddWords}}</td> -->
+        <!-- <td class="p-2">{{oddWord}}</td> -->
+        <td class="p-2">{{word}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

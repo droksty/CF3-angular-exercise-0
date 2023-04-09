@@ -1,0 +1,17 @@
+<div class="border border-2 border-primary">
+  <table>
+    <thead>
+      <tr>
+        <th class="p-2">Λέξεις με ζυγό μήκος</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngIf="evenWords.length === 0">
+        <td class="p-2">Δεν υπάρχουν</td>
+      </tr>
+      <tr *ngFor="let word of evenWords">
+        <td class="p-2">{{word}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
